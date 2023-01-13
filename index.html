@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/interactive-card-details-form-main/images/favicon-32x32.png" type="image/png">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="left-section">
+                <div class="cards">
+                    <div class="back-card">
+                        <img src="/interactive-card-details-form-main/images/bg-card-back.png" alt="">
+                        <span class="cvc">000</span>
+                    </div>
+                    <div class="front-card">
+                        <img src="/interactive-card-details-form-main/images/card-logo.svg" alt="card-logo"
+                            class="card-logo">
+                        <div class="card_container">
+                            <img src="/interactive-card-details-form-main/images/bg-card-front.png" alt="">
+                            <h4 class="number">0000 0000 0000 0000</h4>
+                            <div class="card-info">
+                                <span class="name">Jane Appleseed</span>
+                                <span class="date">
+                                    <span class="month">00</span>
+                                    /
+                                    <span class="year">00</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-section">
+                <form>
+                    <div class="card-details holderName">
+                        <div class="title">
+                            <label>CardHolder Name</label>
+                        </div>
+                        <input type="text" placeholder="e.g. Jane Appleseed" required>
+                        <p class="error"></p>
+                    </div>
+                    <div class="card-details holderNumber">
+                        <div class="title">
+                            <label>Card Number</label>
+                        </div>
+                        <input type="text" placeholder="e.g. 1234 5678 9123 0000" required minlength="16" maxlength="16">
+                        <p class="error"></p>
+                    </div>
+                    <div class="card-expire">
+                        <div class="card-details cardMonth">
+                            <div class="title">
+                                <label>Exp. Date</label>
+                            </div>
+                            <input type="text" placeholder="MM" required maxlength="2" minlength="2">
+                        </div>
+                        <div class="card-details cardYear">
+                            <div class="title">
+                                <label>(MM/YY)</label>
+                            </div>
+                            <input type="text" placeholder="YY" required maxlength="2" minlength="2">
+                        </div>
+                        <div class="card-details cardCvc">
+                            <div class="title">
+                                <label>Cvc</label>
+                            </div>
+                            <input type="text" placeholder="e.g. 123" required maxlength="3" minlength="3">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Confirm</button>
+                </form>
+            </div>
+            <div class="thank hide">
+                <img src="/interactive-card-details-form-main/images/icon-complete.svg" alt="">
+                <h1>Thank you!</h1>
+                <p>We've added your card details</p>
+                <button type="submit" class="thankBtn">Continue</button>
+            </div>
+        </div>
+    </div>
+    <script src="custom.js"></script>
+</body>
+
+</html>
